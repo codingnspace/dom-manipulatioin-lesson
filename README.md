@@ -56,4 +56,42 @@ button:hover {
   ```
   [code exercise](https://codepen.io/pearl1991/pen/XOoNQV)
   
-  ## Advanced Eve
+  ## Advanced Topics
+  ```
+  // 1) Selecting more than one HTML node
+  var allDivs = document.querySelectorAll('div') // results in a nodeList of all divs in the HTML document
+  
+  // Working with nodeList (think of them as arrays)
+  // use a for loop to access and individual nodes within the nodeList
+  for (var i = 0; i < allDivs.length; i++) {
+    allDivs[i].innerHTML = '<p>New Paragraph</p>'
+  }
+  
+  // 2) Removing Elements
+  // basic syntax / how to:
+  // parentNode.removeChild(childNode)
+  
+  var body = document.querySelector('body')
+  var div = document.querySelector('div)
+  
+  body.removeChild(div) // removes the div (child) from the body (parent)
+  
+  // 3) Adding and removing attributes
+  // attributes are things like src, class, id, href
+  // basic syntax:
+  // node.setAttribute('attribute_name', 'new_attribute_value')
+  
+  btn.setAttribute('class', 'newClass') 
+  div.setAttribute('style', 'color: blue; background: white');  
+  
+  btn.removeAttribute('class') // removes all the classes
+  
+  // using classList - another alternative
+  btn.classList.remove('newClass') // removes single class
+  btn.classList.add('anotherNewClass')
+  btn.classList.contains('testClass') // returns true or false
+  btn.classList.toggle('active') 
+  // if btn doesn't have class "active" then add it, or if
+  // it does, then remove it
+  ```
+  [code exercise #1](https://codepen.io/pearl1991/pen/qgLRBJ?editors=1010) | [code exercise #2](https://codepen.io/pearl1991/pen/jdXybB?editors=1010) | [code exercise #3](https://codepen.io/pearl1991/pen/JxwEOz)
