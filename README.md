@@ -95,3 +95,7 @@ button:hover {
   // it does, then remove it
   ```
   [code exercise #1](https://codepen.io/pearl1991/pen/qgLRBJ?editors=1010) | [code exercise #2](https://codepen.io/pearl1991/pen/jdXybB?editors=1010) | [code exercise #3](https://codepen.io/pearl1991/pen/JxwEOz)
+  
+  ## Putting It ALL Together
+  Let's make a matching game together
+  [game](https://codepen.io/pearl1991/pen/JxwEpV)
